@@ -1,0 +1,74 @@
+1. If M is multiple of 3 and 5 then print
+"Good Number" (without quotes).
+
+#include <stdio.h>
+
+int main() {
+    int M;
+    printf("Enter a number: ");
+    scanf("%d", &M);  // get input from user
+
+    if (M % 3 == 0 && M % 5 == 0) {  // check if M is divisible by both 3 and 5
+        printf("Good Number\n");  // print "Good Number" if the condition is true
+    }
+
+    return 0;
+}
+
+2. If M is only multiple of 3 and not of 5 then print "Bad Number"(without quotes). 
+
+#include <stdio.h>
+
+int main() {
+    int M;
+    printf("Enter a number: ");
+    scanf("%d", &M);  // get input from user
+
+    if (M % 3 == 0 && M % 5 != 0) {  // check if M is divisible by 3 but not by 5
+        printf("Bad Number\n");  // print "Bad Number" if the condition is true
+    }
+
+    return 0;
+}
+
+3. If M is only multiple of 5 and not of 3 then print "Poor Number"(without quotes).
+
+#include <stdio.h>
+
+int main() {
+    int M;
+    printf("Enter a number: ");
+    scanf("%d", &M);  // get input from user
+
+    if (M % 3 != 0 && M % 5 == 0) {  // check if M is divisible by 5 but not by 3
+        printf("Poor Number\n");  // print "Poor Number" if the condition is true
+    }
+
+    return 0;
+}
+
+4. If M doesn't satisfy any of the above conditions then print "-1"(without quotes).
+
+#include <stdio.h>
+
+int main() {
+    int M;
+    printf("Enter a number: ");
+    scanf("%d", &M);  // get input from user
+
+    if (M % 3 == 0 && M % 5 == 0) {  // check if M is divisible by both 3 and 5
+        printf("Good Number\n");  // print "Good Number" if the condition is true
+    }
+    else if (M % 3 == 0 && M % 5 != 0) {  // check if M is divisible by 3 but not by 5
+        printf("Bad Number\n");  // print "Bad Number" if the condition is true
+    }
+    else if (M % 3 != 0 && M % 5 == 0) {  // check if M is divisible by 5 but not by 3
+        printf("Poor Number\n");  // print "Poor Number" if the condition is true
+    }
+    else {
+        printf("-1\n");  // print -1 if M doesn't satisfy any of the above conditions
+    }
+
+    return 0;
+}
+
